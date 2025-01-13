@@ -1,5 +1,6 @@
 import { Bio, Intro } from '@/components/profile';
 import { CompaniesSlider } from '@/components/companies';
+import { Accolades } from '@/components/accolades';
 import { Connect } from '@/components/connect';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
           <Intro />
         </div>
         <CompaniesSlider />
+        <Accolades />
         <Connect />
       </div>
     </section>

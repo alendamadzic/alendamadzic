@@ -16,7 +16,7 @@ const navItems = {
   '/alendamadzic.pdf': {
     name: 'resume',
   },
-  '#connect': {
+  '/#connect': {
     name: 'connect',
   },
 };
