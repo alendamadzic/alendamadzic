@@ -28,7 +28,9 @@ type ConnectProps = {
 export function Connect({ className }: ConnectProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
-      <h2 className="text-lg font-semibold text-muted-foreground">Connect</h2>
+      <h2 id="connect" className="text-lg font-semibold text-muted-foreground">
+        Connect
+      </h2>
       <ul className="flex flex-col gap-2">
         {connects.map((connect) => (
           <li key={connect.name}>
