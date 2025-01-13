@@ -12,7 +12,7 @@ const accolades = [
     title: 'Panoptic',
     description: 'Geopolitical perspectives using Generative AI',
     link: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
-    linkText: 'Download on the App Store',
+    linkText: 'Download',
     image: '/panoptic-preview.jpeg',
   },
   {
