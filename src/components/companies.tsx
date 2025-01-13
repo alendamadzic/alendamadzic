@@ -41,7 +41,7 @@ export function CompaniesSlider() {
       <h2 className="text-lg font-semibold text-muted-foreground">Some companies I've worked for and with...</h2>
       <InfiniteSlider gap={24} reverse>
         {companies.map((company) => (
-          <img src={company.logo} alt={company.name} className="h-[80px] w-auto max-w-[120px]" />
+          <img key={company.name} src={company.logo} alt={company.name} className="h-[80px] w-auto max-w-[120px]" />
         ))}
       </InfiniteSlider>
     </div>
