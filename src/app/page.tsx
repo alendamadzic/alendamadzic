@@ -6,8 +6,7 @@ export default function Home() {
     <section>
       <Bio className="mb-4" />
       <Intro />
-      <Connect className="my-12" />
-      <div className="my-12"></div>
+      <Connect />
     </section>
   );
 }
