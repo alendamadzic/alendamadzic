@@ -13,7 +13,7 @@ const navItems = {
   '/stuff': {
     name: 'stuff',
   },
-  '#resume': {
+  '/alendamadzic.pdf': {
     name: 'resume',
   },
   '#connect': {
