@@ -70,7 +70,6 @@ export class InstapaperClient {
 
     const res = await this.request('/bookmarks/list');
     const data = await res.json();
-    console.log(data);
     return data.bookmarks.filter((b: InstapaperArticle) => b.tags?.some((t) => t.name === tag));
   }
 }
