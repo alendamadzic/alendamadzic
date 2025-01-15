@@ -13,24 +13,24 @@ const accolades = [
     description: 'Geopolitical perspectives using Generative AI',
     link: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
     linkText: 'Download',
-    image: '/panoptic-preview.jpeg',
+    image: '/accolades/panoptic-preview.jpeg',
   },
   {
     title: 'Mentioned in The Verge',
     description: 'Referenced in <i>The Installer</i> newsletter by David Pierce.',
     link: 'https://www.theverge.com/2024/11/10/24291418/stardew-valley-mario-luigi-brothership-heretic-installer',
     linkText: 'Read the article',
-    image: '/verge-snippet.png',
+    image: '/accolades/verge-snippet.png',
   },
   {
     title: 'Excersing Presentation Skills',
     description: 'Prentending I know what I am talking about.',
-    image: '/presenting.jpeg',
+    image: '/accolades/presenting.jpeg',
   },
   {
     title: 'Winning Awards',
     description: 'Multi-year Computing Security Awards Winner',
-    image: '/security-awards.jpg',
+    image: '/accolades/security-awards.jpg',
   },
 ];
 
