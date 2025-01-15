@@ -54,6 +54,7 @@ const items = [
 export default function Stuff() {
   return (
     <div className="flex flex-col gap-6">
+      <h2 className="text-2xl font-semibold">Stuff</h2>
       <ReadingList />
       {items.map((item) => (
         <div key={item.name}>
