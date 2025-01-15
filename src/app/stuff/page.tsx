@@ -1,9 +1,10 @@
 import { ItemCard } from './item';
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
+import { ReadingList } from '@/components/reading-list';
 
 const items = [
   {
-    name: 'Read this...',
+    name: 'Books',
     items: [
       {
         title:
@@ -30,7 +31,7 @@ const items = [
     ],
   },
   {
-    name: 'Watch This...',
+    name: 'Films',
     items: [
       {
         title: 'The Social Dilemma',
@@ -52,11 +53,11 @@ const items = [
 
 export default function Stuff() {
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-semibold">{`Things I'm reading, watching, listening to and playing...`}</h1>
+    <div className="flex flex-col gap-6">
+      <ReadingList />
       {items.map((item) => (
         <div key={item.name}>
-          <h2 className="text-lg text-muted-foreground font-semibold">{item.name}</h2>
+          <h2 className="text-lg font-semibold">{item.name}</h2>
           <InfiniteSlider durationOnHover={75} gap={24}>
             {item.items.map((item) => (
               <ItemCard
