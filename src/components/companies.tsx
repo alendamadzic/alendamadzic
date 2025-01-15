@@ -3,37 +3,37 @@ import { InfiniteSlider } from '@/components/ui/infinite-slider';
 const companies = [
   {
     name: 'Adarga',
-    logo: '/adarga.avif',
+    logo: '/companies/adarga.avif',
     needsInversion: false,
   },
   {
     name: 'Titania',
-    logo: '/titania.svg',
+    logo: '/companies/titania.svg',
     needsInversion: true,
   },
   {
     name: 'Manchester City',
-    logo: '/manchester_city.svg',
+    logo: '/companies/manchester_city.svg',
     needsInversion: false,
   },
   {
     name: 'Splunk',
-    logo: '/splunk.svg',
+    logo: '/companies/splunk.svg',
     needsInversion: true,
   },
   {
     name: 'Improbable',
-    logo: '/improbable.svg',
+    logo: '/companies/improbable.svg',
     needsInversion: true,
   },
   {
     name: 'Sony',
-    logo: '/sony.webp',
+    logo: '/companies/sony.webp',
     needsInversion: true,
   },
   {
     name: 'ServiceNow',
-    logo: '/servicenow.svg',
+    logo: '/companies/servicenow.svg',
     needsInversion: true,
   },
 ];
