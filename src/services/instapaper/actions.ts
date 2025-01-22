@@ -43,6 +43,7 @@ export class InstapaperClient {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: Object.keys(data).length ? new URLSearchParams(data).toString() : undefined,
+      cache: 'no-store',
     });
 
     if (!res.ok) throw new Error(`Request failed: ${res.statusText}`);
