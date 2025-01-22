@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Geist } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/nav';
@@ -32,6 +33,7 @@ export default function RootLayout({
             <Footer />
           </main>
           <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
