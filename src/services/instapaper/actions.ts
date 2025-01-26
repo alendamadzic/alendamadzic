@@ -8,7 +8,6 @@ const getConfig = (): InstapaperConfig => ({
   password: process.env.INSTAPAPER_PASSWORD!,
   consumerKey: process.env.INSTAPAPER_CONSUMER_KEY!,
   consumerSecret: process.env.INSTAPAPER_CONSUMER_SECRET!,
-  defaultTag: process.env.INSTAPAPER_TAG,
 });
 
 export class InstapaperClient {
@@ -66,11 +65,11 @@ export class InstapaperClient {
     }
   }
 
-  async getArticles(tag: string = this.config.defaultTag || 'publish'): Promise<InstapaperArticle[]> {
+  async getArticles(): Promise<InstapaperArticle[]> {
     if (!this.token) throw new Error('Not authenticated');
 
-    const res = await this.request('/bookmarks/list');
+    const res = await this.request('/bookmarks/list?folder_id=5121442');
     const data = await res.json();
-    return data.bookmarks.filter((b: InstapaperArticle) => b.tags?.some((t) => t.name === tag));
+    return data.bookmarks;
   }
 }
