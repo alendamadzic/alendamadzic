@@ -7,8 +7,8 @@ const navItems = {
   '/stack': {
     name: 'stack',
   },
-  'https://games.alen.world': {
-    name: 'games',
+  '/projects': {
+    name: 'projects',
   },
   '/stuff': {
     name: 'stuff',
