@@ -31,18 +31,13 @@ const companies = [
     logo: '/companies/sony.webp',
     needsInversion: true,
   },
-  {
-    name: 'ServiceNow',
-    logo: '/companies/servicenow.svg',
-    needsInversion: true,
-  },
 ];
 
 export function CompaniesSlider() {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-lg font-semibold text-muted-foreground">{"Some companies I've worked for and with..."}</h2>
-      <InfiniteSlider gap={24} reverse>
+      <InfiniteSlider gap={24}>
         {companies.map((company) => (
           <img
             key={company.name}
