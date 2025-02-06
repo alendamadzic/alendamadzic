@@ -5,7 +5,7 @@ const projects = [
     title: 'viewpoint.',
     description: 'A way to understand articles by the viewpoints of those invovled.',
     link: 'https://viewpoint.alen.world',
-    icon: '/stack/vercel.png',
+    icon: '/projects/viewpoint.png',
   },
   {
     title: 'games',
