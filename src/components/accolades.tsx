@@ -27,11 +27,6 @@ const accolades = [
     description: 'Prentending I know what I am talking about.',
     image: '/accolades/presenting.jpeg',
   },
-  {
-    title: 'Winning Awards',
-    description: 'Multi-year Computing Security Awards Winner',
-    image: '/accolades/security-awards.jpg',
-  },
 ];
 
 export function Accolades() {
@@ -108,6 +103,14 @@ export function Accolades() {
           </div>
         </div>
       )}
+
+      <p className="text-sm text-muted-foreground">
+        Check out some of my other projects{' '}
+        <Link href="/projects" className="underline">
+          here
+        </Link>
+        .
+      </p>
     </div>
   );
 }

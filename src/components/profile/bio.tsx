@@ -8,14 +8,14 @@ type BioProps = {
 export function Bio({ className }: BioProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
-      <Avatar className="w-20 h-20">
+      <Avatar className="w-24 h-24">
         <AvatarImage src="/avatar.jpg" />
         <AvatarFallback>AD</AvatarFallback>
       </Avatar>
       <div className="flex flex-col">
-        <h1 className="text-xl font-semibold tracking-tighter">
-          {`I'm Alen - product person, rookie developer, failed footballer`}
-        </h1>
+        <h2 className="text-xl font-bold tracking-tighter">
+          {`I'm Alen -- product person, rookie developer, failed footballer`}
+        </h2>
       </div>
     </div>
   );
