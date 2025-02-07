@@ -13,6 +13,12 @@ const projects = [
     link: 'https://games.alen.world',
     icon: '/stack/vercel.png',
   },
+  {
+    title: 'Adarga Panoptic',
+    description: 'Geopolitical perspectives using Generative AI',
+    link: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
+    icon: '/projects/panoptic.png',
+  },
 ];
 
 export default function Projects() {
