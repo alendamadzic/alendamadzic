@@ -54,10 +54,10 @@ const stack = [
     title: 'VSCode Setup',
     items: [
       {
-        title: 'JetBrains Mono',
+        title: 'Geist Mono',
         description: 'My font of choice. This looks great in the IDE and terminal',
-        link: 'https://www.jetbrains.com/lp/mono/',
-        icon: '/stack/jetbrains-mono.png',
+        link: 'https://fonts.google.com/specimen/Geist+Mono',
+        icon: '/stack/geist.png',
       },
       {
         title: 'Git Blame',

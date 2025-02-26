@@ -11,7 +11,7 @@ const projects = [
     title: 'games',
     description: 'A series of sports knowledge games. ',
     link: 'https://games.alen.world',
-    icon: '/stack/vercel.png',
+    icon: '/projects/soccer.png',
   },
   {
     title: 'Adarga Panoptic',
