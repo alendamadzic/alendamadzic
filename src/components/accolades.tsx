@@ -9,17 +9,18 @@ import { useState, useEffect } from 'react';
 
 const accolades = [
   {
-    title: 'Panoptic',
-    description: 'Geopolitical perspectives using Generative AI',
-    link: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
-    linkText: 'Download',
-    image: '/accolades/panoptic-preview.jpeg',
-  },
-  {
     title: 'Mentioned in The Verge',
     description: 'Referenced in <i>The Installer</i> newsletter by David Pierce.',
-    link: 'https://www.theverge.com/2024/11/10/24291418/stardew-valley-mario-luigi-brothership-heretic-installer',
-    linkText: 'Read the article',
+    links: [
+      {
+        url: 'https://www.theverge.com/2024/11/10/24291418/stardew-valley-mario-luigi-brothership-heretic-installer',
+        text: 'Read the article',
+      },
+      {
+        url: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
+        text: 'Try Panoptic',
+      },
+    ],
     image: '/accolades/verge-snippet.png',
   },
   {
@@ -64,19 +65,20 @@ export function Accolades() {
               <div className="flex flex-col gap-2 flex-1">
                 <CardTitle>{accolade.title}</CardTitle>
                 <CardDescription dangerouslySetInnerHTML={{ __html: accolade.description }} />
-                {accolade.link && accolade.linkText && (
-                  <Button className="group w-auto" variant="outline">
-                    <Link href={accolade.link} className="flex items-center p-0">
-                      {accolade.linkText}
-                      <ArrowRight
-                        className="-me-1 ms-2 opacity-60 transition-transform group-hover:translate-x-0.5"
-                        size={16}
-                        strokeWidth={2}
-                        aria-hidden="true"
-                      />
-                    </Link>
-                  </Button>
-                )}
+                {accolade.links &&
+                  accolade.links.map((link) => (
+                    <Button key={link.url} className="group w-auto" variant="outline">
+                      <Link href={link.url} className="flex items-center p-0">
+                        {link.text}
+                        <ArrowRight
+                          className="-me-1 ms-2 opacity-60 transition-transform group-hover:translate-x-0.5"
+                          size={16}
+                          strokeWidth={2}
+                          aria-hidden="true"
+                        />
+                      </Link>
+                    </Button>
+                  ))}
               </div>
             </CardHeader>
           </Card>
