@@ -85,7 +85,7 @@ const stack = [
     items: [
       {
         title: 'Vercel',
-        description: 'For Next.js application deployments.',
+        description: 'For Next.js application deployments and using Vercel AI SDK for AI based projects.',
         link: 'https://vercel.com/',
         icon: '/stack/vercel.png',
       },
@@ -107,12 +107,6 @@ const stack = [
         description: 'For domain name registration. Cute name and logo.',
         link: 'https://porkbun.com/',
         icon: '/stack/porkbun.png',
-      },
-      {
-        title: 'Hugging Face',
-        description: 'For machine learning models and AI based APIs for AI backed projects.',
-        link: 'https://huggingface.co/',
-        icon: '/stack/huggingface.png',
       },
     ],
   },
