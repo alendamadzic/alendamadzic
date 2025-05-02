@@ -4,7 +4,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Geist } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Navbar } from '@/components/nav';
 import { Footer } from '@/components/footer';
 
 const geistSans = Geist({
@@ -26,8 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 max-w-xl mx-4 mt-8 lg:mx-auto">
-            <Navbar />
+          <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0 max-w-xl mx-4 mt-8 lg:mx-auto">
             {children}
             <div className="mt-24" />
             <Footer />

@@ -1,7 +1,9 @@
 import { Bio, Intro } from '@/components/profile';
 import { CompaniesSlider } from '@/components/companies';
-import { Accolades } from '@/components/accolades';
 import { Connect } from '@/components/connect';
+import { Projects } from '@/components/projects/projects-block';
+import { Recommendations } from '@/components/recommendations/recommendations';
+import { ReadingList } from '@/components/reading-list/reading-list';
 
 export default function Home() {
   return (
@@ -12,7 +14,9 @@ export default function Home() {
           <Intro />
         </div>
         <CompaniesSlider />
-        <Accolades />
+        <Projects />
+        <ReadingList />
+        <Recommendations />
         <Connect />
       </div>
     </section>
