@@ -1,4 +1,5 @@
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
+import { HomepageHeading } from '@/components/typography/headings';
 
 const companies = [
   {
@@ -36,7 +37,7 @@ const companies = [
 export function CompaniesSlider() {
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-lg font-semibold text-muted-foreground">{"Some companies I've worked for and with..."}</h2>
+      <HomepageHeading>Some companies I&apos;ve worked for and with...</HomepageHeading>
       <InfiniteSlider gap={24}>
         {companies.map((company) => (
           <img

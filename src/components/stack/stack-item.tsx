@@ -15,9 +15,9 @@ export function StackItem({
   return (
     <div className="flex flex-row gap-4">
       {icon && (
-        <div className="flex-shrink-0 w-16">
-          <div className="relative aspect-square w-16 h-16">
-            <Image src={icon} alt={title} fill className="object-contain rounded-lg" sizes="64px" priority />
+        <div className="flex-shrink-0 w-8">
+          <div className="relative aspect-square w-8 h-8">
+            <Image src={icon} alt={title} fill className="object-contain rounded-lg" sizes="32px" priority />
           </div>
         </div>
       )}
