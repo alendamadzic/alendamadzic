@@ -32,7 +32,7 @@ export function ItemCard({ title, description, image, link }: ItemCardProps) {
   };
 
   return (
-    <div className="relative h-[350px] w-[290px] overflow-hidden rounded-xl">
+    <div className="relative h-[250px] w-[190px] overflow-hidden rounded-xl">
       <div onClick={() => setIsOpen(!isOpen)}>
         <motion.img
           src={image}

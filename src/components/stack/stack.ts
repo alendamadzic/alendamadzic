@@ -1,7 +1,4 @@
-import { StackItem } from './stack-item';
-import Link from 'next/link';
-
-const stack = [
+export const stack = [
   {
     title: 'Apps',
     items: [
@@ -111,36 +108,3 @@ const stack = [
     ],
   },
 ];
-
-export default function Stack() {
-  return (
-    <div>
-      <h2 className="text-2xl font-semibold">Development Stack</h2>
-      <p className="text-muted-foreground mb-4">All of the apps, tools and services I use to build projects.</p>
-      {stack.map((section) => (
-        <div key={section.title} className="mt-8">
-          <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
-          <div className="flex flex-col gap-4">
-            {section.items.map((item) => (
-              <StackItem
-                key={item.title}
-                title={item.title}
-                description={item.description}
-                link={item.link}
-                icon={item.icon}
-              />
-            ))}
-          </div>
-        </div>
-      ))}
-      <p className="text-sm mt-20">
-        This is not a comprehensive list of all the tools and services I use. It is just a list of the ones I use
-        frequently.{' '}
-        <Link href="mailto:alendamadzic@gmail.com" className="underline">
-          Let me know
-        </Link>{' '}
-        if there is anything I should try.
-      </p>
-    </div>
-  );
-}

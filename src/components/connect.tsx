@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-
+import { HomepageHeading } from '@/components/typography/headings';
 const connects = [
   {
     name: 'Email',
@@ -19,6 +19,10 @@ const connects = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/alendamadzic/',
   },
+  {
+    name: 'Resume',
+    url: '/alendamadzic.pdf',
+  },
 ];
 
 type ConnectProps = {
@@ -28,9 +32,7 @@ type ConnectProps = {
 export function Connect({ className }: ConnectProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
-      <h2 id="connect" className="text-lg font-semibold text-muted-foreground">
-        Connect
-      </h2>
+      <HomepageHeading>Connect</HomepageHeading>
       <ul className="flex flex-col gap-2">
         {connects.map((connect) => (
           <li key={connect.name}>
