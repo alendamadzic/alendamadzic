@@ -3,13 +3,18 @@ import { HomepageHeading } from '@/components/typography/headings';
 
 const companies = [
   {
+    name: 'Titania',
+    logo: '/companies/titania.svg',
+    needsInversion: true,
+  },
+  {
     name: 'Adarga',
     logo: '/companies/adarga.avif',
     needsInversion: false,
   },
   {
-    name: 'Titania',
-    logo: '/companies/titania.svg',
+    name: 'Bubble',
+    logo: '/companies/bubble.png',
     needsInversion: true,
   },
   {
@@ -44,7 +49,9 @@ export function CompaniesSlider() {
             key={company.name}
             src={company.logo}
             alt={company.name}
-            className={`h-[80px] w-auto max-w-[120px] ${company.needsInversion ? 'dark:invert dark:brightness-0' : ''}`}
+            className={`h-[80px] w-auto max-w-[120px] object-contain ${
+              company.needsInversion ? 'dark:invert dark:brightness-0' : ''
+            }`}
           />
         ))}
       </InfiniteSlider>
