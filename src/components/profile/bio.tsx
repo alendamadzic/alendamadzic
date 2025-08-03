@@ -14,7 +14,7 @@ export function Bio({ className }: BioProps) {
       </Avatar>
       <div className="flex flex-col">
         <h2 className="text-xl font-bold tracking-tighter">
-          {`I'm Alen -- product person, rookie developer, failed footballer`}
+          {`Alen here 👋 -- product person, rookie developer, failed footballer`}
         </h2>
       </div>
     </div>
