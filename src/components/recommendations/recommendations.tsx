@@ -1,4 +1,4 @@
-import { items } from './items';
+import { recommendations } from '@/lib/lists';
 import { ItemCard } from './item';
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import { HomepageHeading } from '@/components/typography/headings';
@@ -8,7 +8,7 @@ export function Recommendations() {
     <div>
       <HomepageHeading>Recommendations</HomepageHeading>
       <InfiniteSlider durationOnHover={75} gap={24} className="mt-2">
-        {items.map((item) => (
+        {recommendations.map((item) => (
           <ItemCard
             key={item.title}
             title={item.title}

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { HomepageHeading } from '@/components/typography/headings';
-import { articles } from './articles';
+import { articles } from '../lib/lists/articles';
 
 export async function ReadingList() {
   return (

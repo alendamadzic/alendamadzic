@@ -1,4 +1,4 @@
-export const items = [
+export const recommendations = [
   {
     title: "Learnability Isn't Enough: How to Design Apps That Are Easy to Use in the Long Run, Not Just the First Run",
     description:

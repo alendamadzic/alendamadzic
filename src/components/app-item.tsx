@@ -1,19 +1,22 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
-export function StackItem({
+export function AppItem({
   title,
   description,
   link,
   icon = null,
+  className,
 }: {
   title: string;
   description: string;
   link: string;
   icon?: string | null;
+  className?: string;
 }) {
   return (
-    <div className="flex flex-row gap-4">
+    <div className={cn('flex flex-row gap-4', className)}>
       {icon && (
         <div className="flex-shrink-0 w-8">
           <div className="relative aspect-square w-8 h-8">

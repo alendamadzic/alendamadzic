@@ -1,9 +1,12 @@
 import { Bio, Intro } from '@/components/profile';
 import { CompaniesSlider } from '@/components/companies';
 import { Connect } from '@/components/connect';
-import { Projects } from '@/components/projects/projects-block';
 import { Recommendations } from '@/components/recommendations/recommendations';
-import { ReadingList } from '@/components/reading-list/reading-list';
+import { ReadingList } from '@/components/reading-list';
+import { AppBlock } from '@/components/app-item-block';
+import { AppSheet } from '@/components/app-item-sheet';
+import { projects, apps, stack } from '@/lib/lists';
+import { HomepageSubheading } from '@/components/typography/headings';
 
 export default function Home() {
   return (
@@ -14,8 +17,29 @@ export default function Home() {
           <Intro />
         </div>
         <CompaniesSlider />
-        <Projects />
+        <AppBlock
+          title="Projects"
+          description={
+            <HomepageSubheading>
+              Check out the{' '}
+              <AppSheet
+                triggerText="Stack"
+                title="Development Stack"
+                description="All of the apps, tools and services I use to build my projects."
+                footerText="This is not a comprehensive list of all the tools and services I use."
+                sections={stack}
+              />{' '}
+              I use to build these projects.
+            </HomepageSubheading>
+          }
+          items={projects}
+        />
         <ReadingList />
+        <AppBlock
+          title="Interesting Apps I Use"
+          description="Apps that make my daily workflow more productive and enjoyable."
+          items={apps}
+        />
         <Recommendations />
         <Connect />
       </div>
