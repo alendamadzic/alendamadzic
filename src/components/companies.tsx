@@ -49,7 +49,7 @@ export function CompaniesSlider() {
             key={company.name}
             src={company.logo}
             alt={company.name}
-            className={`h-[80px] w-auto max-w-[120px] object-contain ${
+            className={`h-[60px] w-auto max-w-[120px] object-contain ${
               company.needsInversion ? 'dark:invert dark:brightness-0' : ''
             }`}
           />
