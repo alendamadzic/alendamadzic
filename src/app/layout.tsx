@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Geist } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Footer } from '@/components/footer';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,7 +29,10 @@ export default function RootLayout({
             <div className="mt-24" />
             {children}
             <div className="mt-24" />
-            <Footer />
+            <footer className="flex flex-row justify-between items-center mb-16">
+              <p className="text-xs text-muted-foreground">© All rights reserved</p>
+              <ThemeToggle />
+            </footer>
           </main>
           <Analytics />
           <SpeedInsights />
