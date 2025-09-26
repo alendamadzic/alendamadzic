@@ -64,12 +64,6 @@ export const stack = [
         icon: '/stack/git-blame.png',
       },
       {
-        title: 'Prettier',
-        description: 'Ensures my code adheres to the preferences of the different teams I work with.',
-        link: 'https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode',
-        icon: '/stack/prettier.png',
-      },
-      {
         title: 'Tailwind CSS IntelliSense',
         description: 'Makes using Tailwind CSS properties much easier. Even shows color previews.',
         link: 'https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss',

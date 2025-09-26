@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: 'viewpoint.',
-    description: 'A way to understand articles by the viewpoints of those invovled.',
-    link: 'https://viewpoint.alen.world',
-    icon: '/projects/viewpoint.png',
+    title: 'Bubble PPM Pro',
+    description: 'Project and Portfolio Management Software.',
+    link: 'https://bubblegroup.com/',
+    icon: '/projects/bubble.png',
   },
   {
     title: 'Adarga Panoptic',
