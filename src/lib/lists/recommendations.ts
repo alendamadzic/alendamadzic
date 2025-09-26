@@ -39,4 +39,40 @@ export const recommendations = [
     link: 'https://designthinkingmovie.com/',
     type: 'film',
   },
+  {
+    title: 'NotchNook',
+    description:
+      'Transforms the MacBook notch into a functional utility center with widgets, live actions, and file storage.',
+    link: 'https://lo.cafe/notchnook',
+    image: '/apps/notchnook.png',
+    type: 'app',
+  },
+  {
+    title: '!Weather',
+    description: 'Beautiful weather app that lets you "play" through the day to see weather changes over time.',
+    link: 'https://notbor.ing/product/weather',
+    image: '/apps/weather.png',
+    type: 'app',
+  },
+  {
+    title: 'Notion',
+    description: 'My go-to workspace for notes, project management, and knowledge organization. Incredibly versatile.',
+    link: 'https://www.notion.com/',
+    image: '/apps/notion.png',
+    type: 'app',
+  },
+  {
+    title: 'Reeder',
+    description: 'Elegant RSS reader rebuilt for modern use. Perfect for staying updated with blogs and news sources.',
+    link: 'https://reederapp.com/',
+    image: '/apps/reeder.png',
+    type: 'app',
+  },
+  {
+    title: 'Sleeve',
+    description: "Displays beautiful album artwork on your desktop for whatever music you're currently playing.",
+    link: 'https://replay.software/sleeve',
+    image: '/apps/sleeve.png',
+    type: 'app',
+  },
 ];
