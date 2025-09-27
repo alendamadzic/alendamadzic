@@ -16,8 +16,12 @@ export default function Home() {
         </Avatar>
         <h2 className="text-2xl font-semibold">Alen here 👋 -- product person, amateur developer, failed footballer</h2>
         <p className="text-muted-foreground">
-          I design, develop and deliver awesome products. Building with user first design and leveraging AI to deliver
-          scalable, innovative solutions that address real-world challenges.
+          I design,{' '}
+          <Button variant="link" className="p-0" asChild>
+            <Link href={connects.find((connect) => connect.name === 'GitHub')?.url ?? ''}>develop</Link>
+          </Button>{' '}
+          and deliver awesome products. Building with user first design and leveraging AI to deliver scalable,
+          innovative solutions that address real-world challenges.
         </p>
       </section>
 
