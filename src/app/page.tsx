@@ -57,8 +57,8 @@ export default function Home() {
             <Card key={app.title} className="rounded-sm">
               <CardHeader className="flex flex-row gap-4">
                 <div className="flex-shrink-0 w-16">
-                  <div className="relative size-16 rounded-md">
-                    <Image src={app.image} alt={app.title} fill className="object-contain" priority />
+                  <div className="relative size-16">
+                    <Image src={app.image} alt={app.title} fill className="object-contain rounded-lg" priority />
                   </div>
                 </div>
                 <div className="flex flex-col gap-1">
