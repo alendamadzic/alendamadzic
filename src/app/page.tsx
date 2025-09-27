@@ -17,9 +17,9 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Alen here 👋 -- product person, amateur developer, failed footballer</h2>
         <p className="text-muted-foreground">
           I design,{' '}
-          <Button variant="link" className="p-0" asChild>
-            <Link href={connects.find((connect) => connect.name === 'GitHub')?.url ?? ''}>develop</Link>
-          </Button>{' '}
+          <Link href={connects.find((connect) => connect.name === 'GitHub')?.url ?? ''} className="hover:underline">
+            develop
+          </Link>{' '}
           and deliver awesome products. Building with user first design and leveraging AI to deliver scalable,
           innovative solutions that address real-world challenges.
         </p>
