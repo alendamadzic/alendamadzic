@@ -11,14 +11,13 @@ export default function Home() {
     <>
       {/* Profile */}
       <section className="flex flex-col gap-4">
-        <Avatar className="size-20">
+        <Avatar className="size-24 rounded-md">
           <AvatarImage src="/avatar.jpg" />
         </Avatar>
-        <h2 className="text-xl font-semibold">Alen here 👋 -- product person, rookie developer, failed footballer</h2>
-        <p className="text-sm text-muted-foreground">
-          Over a decade experience discovering, designing, developing and delivering awesome products. Building with
-          user first design and leveraging AI to deliver scalable, innovative solutions that address real-world
-          challenges.
+        <h2 className="text-2xl font-semibold">Alen here 👋 -- product person, amateur developer, failed footballer</h2>
+        <p className="text-muted-foreground">
+          I design, develop and deliver awesome products. Building with user first design and leveraging AI to deliver
+          scalable, innovative solutions that address real-world challenges.
         </p>
       </section>
 
@@ -29,10 +28,10 @@ export default function Home() {
           {projects.map((project) => (
             <div key={project.title}>
               <Link href={project.link} target="_blank" className="flex flex-row items-center gap-1">
-                <h4 className="font-semibold">{project.title}</h4>
+                <h4 className="text-lg font-semibold">{project.title}</h4>
                 <ArrowUpRightIcon className="size-4" />
               </Link>
-              <p className="text-sm text-muted-foreground">{project.description}</p>
+              <p className="text-muted-foreground">{project.description}</p>
             </div>
           ))}
         </div>
@@ -41,7 +40,7 @@ export default function Home() {
       {/* Reading List */}
       <section className="flex flex-col gap-6">
         <h3 className="text-sm font-semibold text-muted-foreground">Reading</h3>
-        <div className="flex flex-col gap-1 font-serif text-sm text-muted-foreground">
+        <div className="flex flex-col gap-1 font-serif text-muted-foreground">
           {articles.map((article) => (
             <Link href={article.link} target="_blank" key={article.title}>
               {article.title}
@@ -55,10 +54,10 @@ export default function Home() {
         <h3 className="text-sm font-semibold text-muted-foreground">Recommending</h3>
         <div className="flex flex-col gap-2">
           {recommendations.map((app) => (
-            <Card key={app.title} className="text-sm rounded-sm">
+            <Card key={app.title} className="rounded-sm">
               <CardHeader className="flex flex-row gap-4">
-                <div className="flex-shrink-0 w-12">
-                  <div className="relative size-12 rounded-md">
+                <div className="flex-shrink-0 w-16">
+                  <div className="relative size-16 rounded-md">
                     <Image src={app.image} alt={app.title} fill className="object-contain" priority />
                   </div>
                 </div>
