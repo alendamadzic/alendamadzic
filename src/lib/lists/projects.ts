@@ -14,4 +14,9 @@ export const projects = [
     description: "Quickly find out a football player's squad number.",
     link: 'https://squadnumber.alen.world/',
   },
+  {
+    title: 'cluck!',
+    description: 'Silly chicken based platformer game made for my family!',
+    link: 'https://cluck.alen.world/',
+  },
 ];
