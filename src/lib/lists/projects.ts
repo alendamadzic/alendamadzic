@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     title: 'cluck!',
-    description: 'Silly chicken based platformer game made for my family!',
+    description: 'Silly chicken based platformer!',
     link: 'https://cluck.alen.world/',
   },
 ];
