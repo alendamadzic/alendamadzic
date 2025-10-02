@@ -5,19 +5,19 @@ Product person and developer passionate about building clean, modern application
 ## Tech Stack
 
 ### Languages & Frameworks
-- **TypeScript**
-- **Swift**
-- **Next.js**
-- **Tailwind CSS**
-- **Shadcn/ui**
+- TypeScript
+- Swift
+- Next.js
+- Tailwind CSS
+- Shadcn/ui
 
 ### Development Tools
-- **Cursor**
-- **Xcode**
-- **Warp**
+- Cursor
+- Xcode
+- Warp
 
 ### Services & Platforms
-- **Vercel**
-- **Supabase**
-- **Porkbun**
-- **Resend**
+- Vercel
+- Supabase
+- Porkbun
+- Resend
