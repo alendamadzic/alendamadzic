@@ -3,11 +3,9 @@
 
 @layer base {
   * {
-    /* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS directive */
     @apply border-border;
   }
   body {
-    /* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS directive */
     @apply bg-background text-foreground;
   }
 }
@@ -108,7 +106,6 @@
   --shadow-2xl: 0px 4px 10px 0px hsl(0 0% 0% / 0.5);
 }
 
-/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS directive */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
