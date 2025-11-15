@@ -1,32 +1,10 @@
 export const recommendations = [
   {
-    title: '!Weather',
-    description: 'The best weather widgets for your iPhone.',
-    link: 'https://notbor.ing/product/weather',
-    image: '/apps/weather.png',
-    type: 'app',
-  },
-  {
-    title: "Learnability Isn't Enough: How to Design Apps That Are Easy to Use in the Long Run, Not Just the First Run",
-    description: 'This helps you create apps that are both easy to learn and efficient in long-term use.',
-    image: 'https://m.media-amazon.com/images/I/61rcN28uGIL._SL1360_.jpg',
-    link: 'https://amzn.eu/d/2NkXZFS',
-    type: 'book',
-  },
-  {
     title: 'Hooked: How to Build Habit-Forming Products',
     description: 'How to turn your product into a habit-forming one.',
     image: 'https://m.media-amazon.com/images/I/81L8JOVXJtL._SL1500_.jpg',
     link: 'https://amzn.eu/d/eR9KebV',
     type: 'book',
-  },
-  {
-    title: 'NotchNook',
-    description:
-      'Transforms the MacBook notch into a functional utility center with widgets, live actions, and file storage.',
-    link: 'https://lo.cafe/notchnook',
-    image: '/apps/notchnook.png',
-    type: 'app',
   },
   {
     title: 'Notion',

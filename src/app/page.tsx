@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Item, ItemContent, ItemDescription, ItemGroup, ItemMedia, ItemTitle } from '@/components/ui/item';
 import { articles, connects, projects, recommendations } from '@/lib/lists';
 
 export default function Home() {
@@ -17,32 +17,39 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Alen here 👋 -- product person, amateur developer, failed footballer</h2>
         <p className="text-muted-foreground">
           I design,{' '}
-          <Link href={connects.find((connect) => connect.name === 'GitHub')?.url ?? ''} className="hover:underline">
+          <Link href={connects.find((connect) => connect.name === 'GitHub')?.url ?? ''} className="underline">
             develop
           </Link>{' '}
           and deliver awesome products. Building with user first design and leveraging AI to deliver scalable,
           innovative solutions that address real-world challenges.
         </p>
+        <p className="text-muted-foreground">
+          Check out my{' '}
+          <Link href="https://www.ebay.co.uk/usr/adamadzic" className="underline">
+            garage sale
+          </Link>
+          .
+        </p>
       </section>
 
       {/* Projects */}
-      <section className="flex flex-col gap-6">
+      <section className="flex flex-col gap-4">
         <h3 className="text-sm font-semibold text-muted-foreground">Building</h3>
         <div className="flex flex-col gap-4">
           {projects.map((project) => (
             <div key={project.title}>
               <Link href={project.link} target="_blank" className="flex flex-row items-center gap-1">
-                <h4 className="text-lg font-semibold">{project.title}</h4>
+                <h4 className="font-semibold">{project.title}</h4>
                 <ArrowUpRightIcon className="size-4" />
               </Link>
-              <p className="text-muted-foreground">{project.description}</p>
+              <p className="text-sm text-muted-foreground">{project.description}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Reading List */}
-      <section className="flex flex-col gap-6">
+      <section className="flex flex-col gap-4">
         <h3 className="text-sm font-semibold text-muted-foreground">Reading</h3>
         <div className="flex flex-col gap-1 font-serif text-muted-foreground">
           {articles.map((article) => (
@@ -54,29 +61,25 @@ export default function Home() {
       </section>
 
       {/* Recommendations */}
-      <section className="flex flex-col gap-6">
+      <section className="flex flex-col gap-4">
         <h3 className="text-sm font-semibold text-muted-foreground">Recommending</h3>
-        <div className="flex flex-col gap-2">
+        <ItemGroup>
           {recommendations.map((app) => (
-            <Card key={app.title} className="rounded-sm">
-              <CardHeader className="flex flex-row gap-4">
-                <div className="flex-shrink-0 w-16">
-                  <div className="relative size-16">
-                    <Image src={app.image} alt={app.title} fill className="object-contain rounded-lg" priority />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <CardTitle>{app.title}</CardTitle>
-                  <CardDescription>{app.description}</CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
+            <Item key={app.title}>
+              <ItemMedia variant="image">
+                <Image src={app.image} alt={app.title} fill className="object-cover" priority />
+              </ItemMedia>
+              <ItemContent>
+                <ItemTitle>{app.title}</ItemTitle>
+                <ItemDescription>{app.description}</ItemDescription>
+              </ItemContent>
+            </Item>
           ))}
-        </div>
+        </ItemGroup>
       </section>
 
       {/* Connect */}
-      <section className="flex flex-col gap-6">
+      <section className="flex flex-col gap-4">
         <h3 className="text-sm font-semibold text-muted-foreground">Connect</h3>
         <ul>
           {connects.map((connect) => (
