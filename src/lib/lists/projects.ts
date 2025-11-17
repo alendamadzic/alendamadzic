@@ -1,7 +1,7 @@
 export const projects = [
   {
-    title: 'Bubble PPM Pro',
-    description: 'Project and Portfolio Management Software.',
+    title: 'Bubble PPM',
+    description: 'Enterprise grade Project and Portfolio Management Software.',
     link: 'https://bubblegroup.com/',
   },
   {
