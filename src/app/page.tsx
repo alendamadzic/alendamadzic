@@ -1,7 +1,6 @@
 import { ArrowUpRightIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Item, ItemContent, ItemDescription, ItemGroup, ItemMedia, ItemTitle } from '@/components/ui/item';
 import { articles, connects, projects, recommendations } from '@/lib/lists';
@@ -11,9 +10,6 @@ export default function Home() {
     <>
       {/* Profile */}
       <section className="flex flex-col gap-4">
-        <Avatar className="size-24 rounded-md">
-          <AvatarImage src="/avatar.jpg" />
-        </Avatar>
         <h2 className="text-2xl font-semibold">Alen here 👋 -- product person, amateur developer, failed footballer</h2>
         <p className="text-muted-foreground">
           I design,{' '}
