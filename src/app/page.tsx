@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Item, ItemContent, ItemDescription, ItemGroup, ItemMedia, ItemTitle } from '@/components/ui/item';
-import { articles, connects, projects, recommendations } from '@/lib/lists';
+import { articles, connects, projects, recommendations, writing } from '@/lib/lists';
 
 export default function Home() {
   return (
@@ -43,6 +43,20 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Writing */}
+      {writing.length > 0 && (
+        <section className="flex flex-col gap-4">
+          <h3 className="text-sm font-semibold text-muted-foreground">Writing</h3>
+          <div className="flex flex-col gap-1 font-serif text-muted-foreground">
+            {writing.map((post) => (
+              <Link key={post.slug} href={`/writing/${post.slug}`}>
+                {post.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Reading List */}
       <section className="flex flex-col gap-4">
