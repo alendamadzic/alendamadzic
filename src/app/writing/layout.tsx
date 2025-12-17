@@ -1,19 +1,34 @@
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 import { writing } from '@/lib/lists';
 
-const slug = 'stop-filling-the-jar';
-const post = writing.find((p) => p.slug === slug);
+async function getSlugFromPath(): Promise<string | null> {
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '';
 
-export const metadata: Metadata = post
-  ? {
-      title: post.title,
-    }
-  : {
-      title: 'Post Not Found',
-    };
+  // Extract slug from pathname like /writing/slug-name
+  const match = pathname.match(/^\/writing\/([^/]+)$/);
+  return match ? match[1] : null;
+}
 
-export default function PostLayout({ children }: { children: React.ReactNode }) {
+export async function generateMetadata(): Promise<Metadata> {
+  const slug = await getSlugFromPath();
+  const post = slug ? writing.find((p) => p.slug === slug) : null;
+
+  return post
+    ? {
+        title: post.title,
+      }
+    : {
+        title: 'Post Not Found',
+      };
+}
+
+export default async function PostLayout({ children }: { children: React.ReactNode }) {
+  const slug = await getSlugFromPath();
+  const post = slug ? writing.find((p) => p.slug === slug) : null;
+
   if (!post) {
     notFound();
   }
