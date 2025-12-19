@@ -50,7 +50,7 @@ export default function Home() {
           <h3 className="text-sm font-semibold text-muted-foreground">Writing</h3>
           <div className="flex flex-col gap-1 font-serif text-muted-foreground">
             {writing.map((post) => (
-              <Link key={post.slug} href={`/writing/${post.slug}`}>
+              <Link key={post.link} href={post.link} target="_blank">
                 {post.title}
               </Link>
             ))}
