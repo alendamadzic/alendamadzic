@@ -1,6 +1,6 @@
 import type { NextConfig } from 'next';
 
-const _nextConfig: NextConfig = {
+const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   images: {
     remotePatterns: [
@@ -17,3 +17,5 @@ const _nextConfig: NextConfig = {
     ],
   },
 };
+
+export default nextConfig;
