@@ -1,5 +1,9 @@
 export const articles = [
   {
+    title: "Code Is Cheap Now. Software Isn't.",
+    link: 'https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt',
+  },
+  {
     title: "What's in your stack: The state of tech tools in 2025",
     link: 'https://www.lennysnewsletter.com/p/whats-in-your-stack-the-state-of',
   },
