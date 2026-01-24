@@ -24,4 +24,9 @@ export const projects = [
     description: 'See what UK service stations are on your car journey. My team are using service stations as sprint names.',
     link: 'https://service-station-mapper.vercel.app/',
   },
+  {
+    title: 'plate.',
+    description: 'Nutrition app aimed at care home workers to improve the nutrition of their patients.',
+    link: 'https://plate.alen.world/',
+  },
 ];
