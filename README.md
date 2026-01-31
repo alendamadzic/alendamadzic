@@ -7,17 +7,19 @@ Product person and developer passionate about building clean, modern application
 ### Languages & Frameworks
 - TypeScript
 - Swift
+- React
 - Next.js
-- Tailwind CSS
+- Tailwind
 - Shadcn/ui
 
 ### Development Tools
 - Cursor
+- Claude Code
 - Xcode
-- Warp
 
 ### Services & Platforms
 - Vercel
 - Supabase
+- Convex
 - Porkbun
 - Resend
