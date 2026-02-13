@@ -10,7 +10,10 @@ export default function Home() {
     <>
       {/* Profile */}
       <section className="flex flex-col gap-4">
-        <h2 className="text-2xl font-semibold">Alen here 👋 -- product person, amateur developer, failed footballer</h2>
+        <h2 className="text-2xl font-semibold">
+          Alen here 👋 -- product person, amateur <span className="line-through">developer</span> vibe coder, failed
+          footballer
+        </h2>
         <p className="text-muted-foreground">
           I design,{' '}
           <Link href={connects.find((connect) => connect.name === 'GitHub')?.url ?? ''} className="underline">
