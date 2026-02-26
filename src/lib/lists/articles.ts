@@ -4,10 +4,6 @@ export const articles = [
     link: 'https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt',
   },
   {
-    title: "What's in your stack: The state of tech tools in 2025",
-    link: 'https://www.lennysnewsletter.com/p/whats-in-your-stack-the-state-of',
-  },
-  {
     title: "Why You Need a 'NOT Doing' List, not a Todo List — Ant Murphy",
     link: 'https://www.antmurphy.me/newsletter/why-you-need-a-not-doing-list',
   },

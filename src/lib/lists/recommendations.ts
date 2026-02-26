@@ -21,13 +21,6 @@ export const recommendations = [
     type: 'book',
   },
   {
-    title: 'The Social Dilemma',
-    description: 'A must-watch documentary exploring the dangerous human impact of social networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/en/2/27/Social_dilemma_xlg.jpg',
-    link: 'https://www.netflix.com/title/81254224',
-    type: 'film',
-  },
-  {
     title: 'Reeder',
     description: 'Elegant RSS reader rebuilt for modern use. Perfect for staying updated with blogs and news sources.',
     link: 'https://reederapp.com/',
