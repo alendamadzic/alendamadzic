@@ -15,10 +15,10 @@ export const projects = [
     link: 'https://cluck.alen.world/',
   },
   {
-    title: 'Service Station Mapper',
+    title: 'service stations.',
     description:
       'See what UK service stations are on your car journey. My team are using service stations as sprint names.',
-    link: 'https://service-station-mapper.vercel.app/',
+    link: 'https://service-stations.alen.world/',
   },
   {
     title: 'plate.',
