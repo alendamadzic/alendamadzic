@@ -1,5 +1,10 @@
 export const projects = [
   {
+    title: 'cadence.',
+    description: 'Opinonated, AI-first, portfolio and project management based around the phase/stage gate methodology.',
+    link: 'https://cadence.alen.world/',
+  },
+  {
     title: 'Adarga Panoptic',
     description: 'Geopolitical perspectives using Generative AI',
     link: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
