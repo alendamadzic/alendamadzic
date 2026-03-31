@@ -1,7 +1,8 @@
 export const projects = [
   {
     title: 'cadence.',
-    description: 'Opinonated, AI-first, portfolio and project management based around the phase/stage gate methodology.',
+    description:
+      'Opinonated, AI-first, portfolio and project management based around the phase/stage gate methodology.',
     link: 'https://cadence.alen.world/',
   },
   {

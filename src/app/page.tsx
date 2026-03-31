@@ -1,9 +1,7 @@
 import { ArrowUpRightIcon } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Item, ItemContent, ItemDescription, ItemGroup, ItemMedia, ItemTitle } from '@/components/ui/item';
-import { articles, connects, projects, recommendations, writing } from '@/lib/lists';
+import { articles, connects, projects, writing } from '@/lib/lists';
 
 export default function Home() {
   return (
@@ -71,24 +69,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-      </section>
-
-      {/* Recommendations */}
-      <section className="flex flex-col gap-4">
-        <h3 className="text-sm font-semibold text-muted-foreground">Recommending</h3>
-        <ItemGroup>
-          {recommendations.map((app) => (
-            <Item key={app.title}>
-              <ItemMedia variant="image">
-                <Image src={app.image} alt={app.title} fill className="object-cover" priority />
-              </ItemMedia>
-              <ItemContent>
-                <ItemTitle>{app.title}</ItemTitle>
-                <ItemDescription>{app.description}</ItemDescription>
-              </ItemContent>
-            </Item>
-          ))}
-        </ItemGroup>
       </section>
 
       {/* Connect */}
