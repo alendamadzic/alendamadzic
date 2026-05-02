@@ -27,8 +27,8 @@ export const projects = [
     link: 'https://service-stations.alen.world/',
   },
   {
-    title: 'plate.',
-    description: 'Nutrition app aimed at care home workers to improve the nutrition of their patients.',
-    link: 'https://plate.alen.world/',
+    title: 'kicklight.',
+    description: 'Have your Phillips Hue light strips reflect a stat, like possession, for the football (soccer) game you are watching.',
+    link: 'https://github.com/alendamadzic/kicklight',
   },
 ];
