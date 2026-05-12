@@ -28,7 +28,8 @@ export const projects = [
   },
   {
     title: 'kicklight.',
-    description: 'Have your Phillips Hue light strips reflect a stat, like possession, for the football (soccer) game you are watching.',
+    description:
+      'Have your Phillips Hue light strips reflect a stat, like possession, for the football (soccer) game you are watching.',
     link: 'https://github.com/alendamadzic/kicklight',
   },
 ];

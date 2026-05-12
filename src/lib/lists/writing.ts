@@ -1,19 +1,23 @@
 export interface Post {
   title: string;
   link: string;
+  publishedDate: string;
 }
 
 export const writing: Post[] = [
   {
     title: 'All In: Why Great PMs Think Like Poker Players',
-    link: 'https://medium.com/@alendamadzic/all-in-why-great-pms-think-like-poker-players-e01f89ab32d1',
+    link: '/writing/all-in-why-great-pms-think-like-poker-players',
+    publishedDate: '18 Feb 2026',
   },
   {
     title: 'Stop Filling the Jar: Why Arbitrary Deadlines Kill Good Software',
-    link: 'https://medium.com/@alendamadzic/stop-filling-the-jar-why-arbitrary-deadlines-kill-good-software-112f7cea0743',
+    link: '/writing/stop-filling-the-jar',
+    publishedDate: '19 Dec 2025',
   },
   {
     title: "Why Phase-Gate Methodology Isn't Dead (It Just Needed Better Software)",
-    link: 'https://medium.com/@alendamadzic/why-phase-gate-methodology-isnt-dead-it-just-needed-better-software-8dfc3e510068',
+    link: '/writing/why-phase-gate-methodology-isnt-dead',
+    publishedDate: '19 Dec 2025',
   },
 ];
