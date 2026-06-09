@@ -11,6 +11,11 @@ export const projects = [
     link: 'https://apps.apple.com/gb/app/adarga-panoptic/id6480463180',
   },
   {
+    title:'rondo.',
+    description: "Simple football game to test your ball knowledge.",
+    link: 'https://rondo.alen.world/',
+  },
+  {
     title: 'squad number.',
     description: "Quickly find out a football player's squad number.",
     link: 'https://squadnumber.alen.world/',
