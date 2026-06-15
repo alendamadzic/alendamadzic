@@ -18,7 +18,7 @@ export const projects = [
   {
     title:'xi.',
     description: "Can you remember the starting XI from today's randomly selected famous match?",
-    link: 'https://rondo.alen.world/',
+    link: 'https://xi.alen.world/',
   },
   {
     title: 'squad number.',
