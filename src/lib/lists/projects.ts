@@ -14,7 +14,7 @@ export const projects = [
     title:'rondo.',
     description: "Simple football game to test your ball knowledge.",
     link: 'https://rondo.alen.world/',
-  },,
+  },
   {
     title:'xi.',
     description: "Can you remember the starting XI from today's randomly selected famous match?",
