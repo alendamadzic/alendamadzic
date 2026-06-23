@@ -42,4 +42,9 @@ export const projects = [
       'Have your Phillips Hue light strips reflect a stat, like possession, for the football (soccer) game you are watching.',
     link: 'https://github.com/alendamadzic/kicklight',
   },
+  {
+    title: 'deskr.',
+    description: 'Rank desk setups between 1-10 and get the products you love from them.',
+    link: 'https://deskr.alen.world/',
+  },
 ];
