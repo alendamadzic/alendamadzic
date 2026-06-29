@@ -6,6 +6,11 @@ export interface Post {
 
 export const writing: Post[] = [
   {
+    title: 'Things I Believe (in Product Management)',
+    link: '/writing/things-i-believe-in-product-management',
+    publishedDate: '29 Jun 2026',
+  },
+  {
     title: 'All In: Why Great PMs Think Like Poker Players',
     link: '/writing/all-in-why-great-pms-think-like-poker-players',
     publishedDate: '18 Feb 2026',
